@@ -1,5 +1,7 @@
 package me.matoosh.evolution.simulation.organism;
 
+import java.util.ArrayList;
+
 /**
  * Represents a single organism within a generation.
  * @author Mateusz Rêbacz
@@ -9,7 +11,7 @@ public class Organism {
 	/**
 	 * The characteristics of this organism.
 	 */
-	public Characteristics characteristics;
+	public ArrayList<Trait> traitChain = new ArrayList<Trait>();
 	
 	/**
 	 * Creates a new organism with random characteristics.
@@ -21,7 +23,7 @@ public class Organism {
 	 * Creates a new organism with predefined characteristics.
 	 * @param characteristics
 	 */
-	public Organism(Characteristics characteristics) {
+	public Organism(ArrayList<Trait> characteristics) {
 		
 	}
 	/**
@@ -38,6 +40,6 @@ public class Organism {
 	 */
 	public String getSpecies() {
 		//TODO: Generate species name from the characteristics.
-		return "";
+		return characteristics.getSpecies();
 	}
 }
