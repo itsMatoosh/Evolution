@@ -6,6 +6,31 @@ package me.matoosh.evolution.simulation.organism;
  *
  */
 public class Organism {
+	/**
+	 * The characteristics of this organism.
+	 */
+	public Characteristics characteristics;
+	
+	/**
+	 * Creates a new organism with random characteristics.
+	 */
+	public Organism() {
+		
+	}
+	/**
+	 * Creates a new organism with predefined characteristics.
+	 * @param characteristics
+	 */
+	public Organism(Characteristics characteristics) {
+		
+	}
+	/**
+	 * Creates a new organism, based on the characteristics of his parents.
+	 * @param parents
+	 */
+	public Organism(Organism[] parents) {
+		
+	}
 	
 	/**
 	 * Gets the name of the species, based on the organism's characteristics.
