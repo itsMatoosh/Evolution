@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /**
  * Represents a single simulation.
- * @author Mateusz Rêbacz
+ * @author Mateusz Rebacz
  *
  */
 public class Simulation {

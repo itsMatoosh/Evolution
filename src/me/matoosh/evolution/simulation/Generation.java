@@ -4,7 +4,7 @@ import me.matoosh.evolution.simulation.organism.Organism;
 
 /**
  * Represents a single generation of organisms within a simulation.
- * @author Mateusz Rêbacz
+ * @author Mateusz Rebacz
  *
  */
 public class Generation {

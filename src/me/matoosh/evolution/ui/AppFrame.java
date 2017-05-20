@@ -5,7 +5,7 @@ import javax.swing.JFrame;
 
 /**
  * The frame of the aplication.
- * @author Mateusz Rêbacz
+ * @author Mateusz Rebacz
  *
  */
 public class AppFrame extends JFrame {
@@ -13,10 +13,6 @@ public class AppFrame extends JFrame {
 	 * UUID of this ui element.
 	 */
 	private static final long serialVersionUID = 928370391529452127L;
-	/**
-	 * The layout manager of the application.
-	 */
-	public AppLayoutManager layoutManager;
 	
 	/**
 	 * Instantiates a default application frame.
@@ -27,12 +23,18 @@ public class AppFrame extends JFrame {
         setSize(1280,720);
 		setLayout(new GridBagLayout());
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setVisible(true);
         
-        //Changing the layout to HUB.
-        if(layoutManager == null) {
-        	layoutManager = new AppLayoutManager();
-        }
-        layoutManager.changeLayout(LayoutType.HUB);
+        //Adding panels.
+        addPanels();
+        
+        //Making the window visible.
+        setVisible(true);
+	}
+	
+	/**
+	 * Adds the default panels to thw window.
+	 */
+	private void addPanels() {
+		
 	}
 }
